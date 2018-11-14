@@ -32,3 +32,6 @@ packed chain with bias： 元素之间没有空隙，而链的两侧
 
 对于链式排列，需要元素与元素之间，首尾元素与容器之间的相互约束
 对于weighted 有点类似linearlayout的weight属性，app:layout_constraintHorizontal_weight="1"
+
+ConstraintLayout约束布局是android系统中最优秀的布局设计之一，兼顾LinearLayout与RelativeLayout的优点，
+非常适合构建复杂布局，在布局设计中具有里程碑意义
