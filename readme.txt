@@ -9,3 +9,8 @@ layout_constraint[本源位置]_[目标位置]="目标ID"
 
 2. 设置比例
 在ConstraintLayout布局中，除了指定约束，还支持设置比例，类似于LinearLayout中的Bias项
+
+
+3. 引导线约束
+orientation="vertical" 表示引导线的方向竖直
+layout_constraintGuide_begin="72dp" 表示距离页面

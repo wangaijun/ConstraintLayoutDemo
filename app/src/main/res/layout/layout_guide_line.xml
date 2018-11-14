@@ -7,6 +7,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!--
+        垂直方向的引导线
+        离左边72dp
+     -->
     <android.support.constraint.Guideline
         android:id="@+id/guideLine"
         android:layout_width="wrap_content"
@@ -16,24 +20,30 @@
         tools:layout_editor_absoluteY="0dp"
         app:layout_constraintGuide_begin="72dp"/>
 
+    <!--
+        和引导线左对齐
+     -->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Guide Up"
         app:layout_constraintStart_toStartOf="@id/guideLine"
         tools:layout_editor_absoluteX="72dp"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
-        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.25"/>
 
+    <!--
+        和引导线左对齐
+     -->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Guide Down"
         app:layout_constraintStart_toStartOf="@id/guideLine"
         tools:layout_editor_absoluteX="72dp"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
-        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.75"/>
 
 </android.support.constraint.ConstraintLayout>
