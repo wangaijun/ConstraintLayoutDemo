@@ -31,3 +31,4 @@ packed: 元素之间不含空隙，链的两侧留有空隙，且空隙宽度相
 packed chain with bias： 元素之间没有空隙，而链的两侧
 
 对于链式排列，需要元素与元素之间，首尾元素与容器之间的相互约束
+对于weighted 有点类似linearlayout的weight属性，app:layout_constraintHorizontal_weight="1"
