@@ -20,3 +20,14 @@ layout_constraintGuide_begin="72dp" 表示距离页面
 
 5. 控件宽高比
 layout_constraintDimensionRatio 宽高比
+
+高级内容
+链式结构， 在ConstraintLayout约束布局中，还支持多个视图的排列组合，即链式结构。这与LinearLayout中多个控件排列的layout_weight属性非常类似，
+通过设置不同的链式结构，就可以排列出不同的样式。
+spread： 元素之间流有空隙，链的两侧也留有空隙，链的两侧也留有空隙，空隙的宽度相等。
+spread inside： 元素之间留有空隙，链的两侧紧贴于容器两侧，控系的宽度相等。
+weighted: 元素之间不含空隙，紧密排列
+packed: 元素之间不含空隙，链的两侧留有空隙，且空隙宽度相等。
+packed chain with bias： 元素之间没有空隙，而链的两侧
+
+对于链式排列，需要元素与元素之间，首尾元素与容器之间的相互约束
