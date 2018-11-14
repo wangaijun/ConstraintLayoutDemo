@@ -6,21 +6,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- 父的左上角 -->
     <Button
         android:id="@+id/small"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:text="Small"
-        app:layout_constraintStart_toStartOf="@id/constraintLayout"
-        app:layout_constraintTop_toTopOf="@id/constraintLayout"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
+    <!--
+        父的顶部和底部之间
+        宽度为0dp，在small的右边，和父的右边对齐，导致在宽度上填充两者之间的距离
+    -->
     <Button
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Large"
-        app:layout_constraintBottom_toBottomOf="@id/constraintLayout"
-        app:layout_constraintEnd_toEndOf="@id/constraintLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintStart_toEndOf="@id/small"
-        app:layout_constraintTop_toTopOf="@id/constraintLayout"/>
+        />
 
 </android.support.constraint.ConstraintLayout>

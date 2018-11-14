@@ -14,3 +14,6 @@ layout_constraint[本源位置]_[目标位置]="目标ID"
 3. 引导线约束
 orientation="vertical" 表示引导线的方向竖直
 layout_constraintGuide_begin="72dp" 表示距离页面
+
+4. 控件填充
+把宽高设置为0dp时，会根据位置自动填充
