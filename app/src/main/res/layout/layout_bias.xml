@@ -6,23 +6,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- 指定约束 -->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Center"
-        app:layout_constraintEnd_toEndOf="@id/constraintLayout"
-        app:layout_constraintStart_toStartOf="@id/constraintLayout"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
-        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
+    <!-- 设置比例 -->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bias"
-        app:layout_constraintEnd_toEndOf="@id/constraintLayout"
-        app:layout_constraintStart_toStartOf="@id/constraintLayout"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
-        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintVertical_bias="0.25"/>
 
