@@ -13,8 +13,8 @@
         android:layout_marginBottom="16dp"
         android:layout_marginStart="16dp"
         android:text="取消"
-        app:layout_constraintBottom_toBottomOf="@id/constraintLayout"
-        app:layout_constraintStart_toStartOf="@id/constraintLayout"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <Button
         android:id="@+id/next_button"
@@ -23,7 +23,7 @@
         android:layout_marginBottom="16dp"
         android:layout_marginStart="16dp"
         android:text="下一步"
-        app:layout_constraintBottom_toBottomOf="@id/constraintLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/cancel_button"/>
 
 </android.support.constraint.ConstraintLayout>
