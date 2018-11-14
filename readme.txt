@@ -17,3 +17,6 @@ layout_constraintGuide_begin="72dp" 表示距离页面
 
 4. 控件填充
 把宽高设置为0dp时，会根据位置自动填充
+
+5. 控件宽高比
+layout_constraintDimensionRatio 宽高比
