@@ -8,12 +8,12 @@
 
     <Button
         android:id="@+id/btn1"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="A"
 
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintHorizontal_bias="0.10"
 
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/btn2"
@@ -21,11 +21,10 @@
 
     <Button
         android:id="@+id/btn2"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="B"
 
-        app:layout_constraintHorizontal_weight="2"
 
         app:layout_constraintLeft_toRightOf="@+id/btn1"
         app:layout_constraintRight_toLeftOf="@+id/btn3"
@@ -33,11 +32,9 @@
 
     <Button
         android:id="@+id/btn3"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="C"
-
-        app:layout_constraintHorizontal_weight="1"
 
         app:layout_constraintLeft_toRightOf="@+id/btn2"
         app:layout_constraintRight_toRightOf="parent"
